@@ -1,0 +1,4 @@
+.block {
+  border: var(--border);
+  background-color: var(--color-white);
+}
