@@ -13,4 +13,30 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  padding-block: var(--padding-block-body);
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-body);
+  font-family: var(--font-family), sans-serif;
+  font-size: 1.125rem;
+  background-image: url(/images/background.png);
+  background-size: auto 100vh;
+  background-repeat: repeat-x;
+  background-attachment: fixed;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-main);
+}
+
+@media (width >= 1024px) {
+  .page {
+    align-items: center;
+  }
+
+  .container {
+    inline-size: 48.6%;
+  }
 }
